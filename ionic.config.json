@@ -2,5 +2,7 @@
   "name": "whatspoppin",
   "app_id": "d5f36e0e",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
