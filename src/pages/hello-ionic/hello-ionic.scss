@@ -1,3 +1,12 @@
 page-hello-ionic {
-  
+  $font-stack:    Helvetica, sans-serif;
+  $primary-color: #333;
+
+  ion-title{
+
+      font: 100% $font-stack;
+      color: $primary-color;
+
+
+  }
 }
