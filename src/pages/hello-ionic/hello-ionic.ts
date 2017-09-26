@@ -20,13 +20,13 @@ data6: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 
 constructor(public navCtrl: NavController) {
 this.data.push({
-details: 'The first round of Club Tennis Tryouts will be held at SPAC and last 3 hours. Please be sure to remember your water cooler and bring a towel!',
+details: 'The first round of Club Tennis Tryouts will be held at SPAC and last 3 hours.',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data1.push({
-details: 'Mr.Smith will be hosting a creative writing workshop in Fisk 102. The theme is Halloween. Prepare to get spooky!',
+details: 'Mr.Smith will be hosting a creative writing workshop in Fisk 102. The theme is Halloween.',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
@@ -50,7 +50,7 @@ showDetails: false
 });
 
 this.data5.push({
-details: 'Northwestern\'s premoere all-male Acapella group will be performing their first show of 2017 tonight in the Norris Louis Room',
+details: 'The all male Acapella group will be performing their first show of 2017 tonight in the Norris Louis Room',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
