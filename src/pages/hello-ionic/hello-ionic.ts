@@ -84,13 +84,16 @@ buttonClick(){
 var count_string = document.getElementById('count').textContent;
 var count_number = Number(count_string);
 let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn');
 
 if(this.ionicNamedColor == 'light') {
        this.ionicNamedColor = 'secondary';
        clicked = true;
+	   btn.innerHTML = 'Poppin\'';
      } else {
        this.ionicNamedColor = 'light';
        clicked = false;
+	   btn.innerHTML = 'Pop?';
      }
 
 if (clicked == true){
@@ -106,13 +109,16 @@ buttonClick1(){
 var count_string = document.getElementById('count1').textContent;
 var count_number = Number(count_string);
 let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn1');
 
 if(this.ionicNamedColor1 == 'light') {
        this.ionicNamedColor1 = 'secondary';
        clicked = true;
+	   btn.innerHTML = 'Poppin\'';
      } else {
        this.ionicNamedColor1 = 'light';
        clicked = false;
+	   btn.innerHTML = 'Pop?';
      }
 
 if (clicked == true){
@@ -126,13 +132,16 @@ buttonClick2(){
 var count_string = document.getElementById('count2').textContent;
 var count_number = Number(count_string);
 let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn2');
 
 if(this.ionicNamedColor2 == 'light') {
        this.ionicNamedColor2 = 'secondary';
        clicked = true;
+	   btn.innerHTML = 'Poppin\'';
      } else {
        this.ionicNamedColor2 = 'light';
        clicked = false;
+	   btn.innerHTML = 'Pop?';
      }
 
 if (clicked == true){
@@ -146,13 +155,16 @@ buttonClick3(){
 var count_string = document.getElementById('count3').textContent;
 var count_number = Number(count_string);
 let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn3');
 
 if(this.ionicNamedColor3 == 'light') {
        this.ionicNamedColor3 = 'secondary';
        clicked = true;
+	   btn.innerHTML = 'Poppin\'';
      } else {
        this.ionicNamedColor3 = 'light';
        clicked = false;
+	   btn.innerHTML = 'Pop?';
      }
 
 if (clicked == true){
@@ -166,13 +178,16 @@ buttonClick4(){
 var count_string = document.getElementById('count4').textContent;
 var count_number = Number(count_string);
 let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn4');
 
 if(this.ionicNamedColor4 == 'light') {
        this.ionicNamedColor4 = 'secondary';
        clicked = true;
+	   btn.innerHTML = 'Poppin\'';
      } else {
        this.ionicNamedColor4 = 'light';
        clicked = false;
+	   btn.innerHTML = 'Pop?';
      }
 
 if (clicked == true){
@@ -186,13 +201,16 @@ buttonClick5(){
 var count_string = document.getElementById('count5').textContent;
 var count_number = Number(count_string);
 let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn5');
 
 if(this.ionicNamedColor5 == 'light') {
        this.ionicNamedColor5 = 'secondary';
        clicked = true;
+	   btn.innerHTML = 'Poppin\'';
      } else {
        this.ionicNamedColor5 = 'light';
        clicked = false;
+	   btn.innerHTML = 'Pop?';
      }
 
 if (clicked == true){
@@ -206,13 +224,16 @@ buttonClick6(){
 var count_string = document.getElementById('count6').textContent;
 var count_number = Number(count_string);
 let clicked : boolean = false;
+let btn = <HTMLElement> document.querySelector('#btn6');
 
 if(this.ionicNamedColor6 == 'light') {
        this.ionicNamedColor6 = 'secondary';
        clicked = true;
+	   btn.innerHTML = 'Poppin\'';
      } else {
        this.ionicNamedColor6 = 'light';
        clicked = false;
+	   btn.innerHTML = 'Pop?';
      }
 
 if (clicked == true){
