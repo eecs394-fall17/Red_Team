@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 @Component({
 selector: 'page-hello-ionic',
@@ -6,9 +7,27 @@ templateUrl: 'hello-ionic.html'
 })
 
 export class HelloIonicPage {
-constructor() {
 
-}
+data: Array<{ details: string, icon: string, showDetails: boolean}> = [];
+
+
+ constructor(public navCtrl: NavController) {
+     this.data.push({
+         details: 'details dropdown',
+         icon: 'ios-add-circle-outline',
+         showDetails: false
+       });
+ }
+
+ toggleDetails(data) {
+   if (data.showDetails) {
+       data.showDetails = false;
+       data.icon = 'ios-add-circle-outline';
+   } else {
+       data.showDetails = true;
+       data.icon = 'ios-remove-circle-outline';
+   }
+ }
 
 public ionicNamedColor: string = 'light';
 
@@ -30,7 +49,7 @@ document.getElementById('count').textContent = (count_number + 1).toString();
 }else{
 document.getElementById('count').textContent = (count_number - 1).toString();
 }
-console.log(this);
+
 }
 
 

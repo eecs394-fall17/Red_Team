@@ -23,7 +23,9 @@
   </p> -->
 <ion-list>
 
-    <ion-item>
+    <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-left [name]="d.icon"></ion-icon>
+     {{d.title}}
+     <div *ngIf="d.showDetails">{{d.details}}</div>
       <!-- <ion-thumbnail item-start>
         <img src="assets/img/thumbnail-totoro.png">
       </ion-thumbnail> -->
@@ -35,7 +37,10 @@
       <button ion-button item-end [color]="ionicNamedColor" (click)='buttonClick();' >Pop?</button>
     </ion-item>
 
-    <ion-item>
+
+    <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-left [name]="d.icon"></ion-icon>
+     {{d.title}}
+     <div *ngIf="d.showDetails">{{d.details}}</div>
       <!-- <ion-thumbnail item-start>
         <img src="assets/img/thumbnail-totoro.png">
       </ion-thumbnail> -->
@@ -44,10 +49,12 @@
       <!-- <p>Hayao Miyazaki • 1988</p> -->
       <ion-icon item-right ios="ios-contacts" md="md-contacts"></ion-icon>
       <h3 id='count1' item-right>6</h3>
-      <button ion-button item-end color="light" (click)='buttonClick1();'>Pop?</button>
+      <button ion-button item-end [color]="ionicNamedColor" (click)='buttonClick1();'>Pop?</button>
     </ion-item>
 
-    <ion-item>
+    <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-left [name]="d.icon"></ion-icon>
+     {{d.title}}
+     <div *ngIf="d.showDetails">{{d.details}}</div>
       <!-- <ion-thumbnail item-start>
         <img src="assets/img/thumbnail-totoro.png">
       </ion-thumbnail> -->
@@ -56,10 +63,12 @@
       <!-- <p>Hayao Miyazaki • 1988</p> -->
       <ion-icon item-right ios="ios-contacts" md="md-contacts"></ion-icon>
       <h3 id='count2' item-right>36</h3>
-      <button ion-button item-end color="light" (click)='buttonClick2();'>Pop?</button>
+      <button ion-button item-end [color]="ionicNamedColor" (click)='buttonClick2();'>Pop?</button>
     </ion-item>
 
-    <ion-item>
+    <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-left [name]="d.icon"></ion-icon>
+     {{d.title}}
+     <div *ngIf="d.showDetails">{{d.details}}</div>
       <!-- <ion-thumbnail item-start>
         <img src="assets/img/thumbnail-totoro.png">
       </ion-thumbnail> -->
@@ -68,10 +77,12 @@
       <!-- <p>Hayao Miyazaki • 1988</p> -->
       <ion-icon item-right ios="ios-contacts" md="md-contacts"></ion-icon>
       <h3 id='count3' item-right>82</h3>
-      <button ion-button item-end color="light" (click)='buttonClick3();'>Pop?</button>
+      <button ion-button item-end [color]="ionicNamedColor" (click)='buttonClick3();'>Pop?</button>
     </ion-item>
 
-    <ion-item>
+    <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-left [name]="d.icon"></ion-icon>
+     {{d.title}}
+     <div *ngIf="d.showDetails">{{d.details}}</div>
       <!-- <ion-thumbnail item-start>
         <img src="assets/img/thumbnail-totoro.png">
       </ion-thumbnail> -->
@@ -80,10 +91,12 @@
       <!-- <p>Hayao Miyazaki • 1988</p> -->
       <ion-icon item-right ios="ios-contacts" md="md-contacts"></ion-icon>
       <h3 id='count4' item-right>12</h3>
-      <button ion-button item-end color="light" (click)='buttonClick4();'>Pop?</button>
+      <button ion-button item-end [color]="ionicNamedColor" (click)='buttonClick4();'>Pop?</button>
     </ion-item>
 
-    <ion-item>
+    <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-left [name]="d.icon"></ion-icon>
+     {{d.title}}
+     <div *ngIf="d.showDetails">{{d.details}}</div>
       <!-- <ion-thumbnail item-start>
         <img src="assets/img/thumbnail-totoro.png">
       </ion-thumbnail> -->
@@ -92,10 +105,12 @@
       <!-- <p>Hayao Miyazaki • 1988</p> -->
       <ion-icon item-right ios="ios-contacts" md="md-contacts"></ion-icon>
       <h3 id='count5' item-right>9</h3>
-      <button ion-button item-end color="light" (click)='buttonClick5();'>Pop?</button>
+      <button ion-button item-end [color]="ionicNamedColor" (click)='buttonClick5();'>Pop?</button>
     </ion-item>
 
-    <ion-item>
+    <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-left [name]="d.icon"></ion-icon>
+     {{d.title}}
+     <div *ngIf="d.showDetails">{{d.details}}</div>
       <!-- <ion-thumbnail item-start>
         <img src="assets/img/thumbnail-totoro.png">
       </ion-thumbnail> -->
@@ -104,53 +119,8 @@
       <!-- <p>Hayao Miyazaki • 1988</p> -->
       <ion-icon item-right ios="ios-contacts" md="md-contacts"></ion-icon>
       <h3 id='count6' item-right>13</h3>
-      <button ion-button item-end color="light" (click)='buttonClick6();'>Pop?</button>
+      <button ion-button item-end [color]="ionicNamedColor" (click)='buttonClick6();'>Pop?</button>
     </ion-item>
-
-    <!-- <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/img/thumbnail-ghostbusters.png">
-      </ion-thumbnail>
-      <h2>Ghostbusters</h2>
-      <p>Ivan Reitman • 1984</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/img/thumbnail-batman.png">
-      </ion-thumbnail>
-      <h2>Batman</h2>
-      <p>Tim Burton • 1988</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/img/thumbnail-bttf.png">
-      </ion-thumbnail>
-      <h2>Back to the Future</h2>
-      <p>Robert Zemeckis • 1985</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/img/thumbnail-esb.png">
-      </ion-thumbnail>
-      <h2>The Empire Strikes Back</h2>
-      <p>Irvin Kershner • 1980</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/img/thumbnail-terminator.png">
-      </ion-thumbnail>
-      <h2>The Terminator</h2>
-      <p>James Cameron • 1984</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item> -->
 
   </ion-list>
 
