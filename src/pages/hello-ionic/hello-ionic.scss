@@ -2,11 +2,12 @@ page-hello-ionic {
   $font-stack:    Helvetica, sans-serif;
   $primary-color: #333;
 
-  ion-title{
+  ion-card-header{
 
     font: 100% $font-stack;
     color: $primary-color;
-    text-align: center;
+    font-size: 100px;
 
   }
+
 }

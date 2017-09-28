@@ -23,19 +23,35 @@
   </p> -->
 <ion-list>
 
-    <ion-item padding *ngFor="let d of data" ><ion-icon color="primary" item-left [name]="d.icon" (click)="toggleDetails(d)"></ion-icon>
+  <ion-card>
+
+  <ion-card-header>
+    9:00am
+  </ion-card-header>
+
+  <ion-card-content>
+    <!-- Add card content here! -->
+    <h1 class = "padding-horizontal" item-content >Club Tennis Tryouts
+    <!-- <p>Hayao Miyazaki • 1988</p> -->
+    <ion-icon padding-left item-right ios="ios-contacts" md="md-contacts">
+  <h3 id='count' padding-left padding-right>7</h3>
+    </ion-icon>
+
+    </h1>
+    <button id='btn' ion-button item-right [color]="ionicNamedColor" (click)='buttonClick();' >Pop?
+    </button>
+    <div class = "item item-divider">
+    <ion-item padding *ngFor="let d of data1" ><ion-icon color="primary" item-left [name]="d.icon" (click)="toggleDetails(d)"></ion-icon>
      {{d.title}}
      <div *ngIf="d.showDetails">{{d.details}}</div>
-      <!-- <ion-thumbnail item-start>
-        <img src="assets/img/thumbnail-totoro.png">
-      </ion-thumbnail> -->
-      <h1 item-start>9:00am</h1>
-      <h2 item-content >Club Tennis Tryouts</h2>
-      <!-- <p>Hayao Miyazaki • 1988</p> -->
-      <ion-icon item-right ios="ios-contacts" md="md-contacts"></ion-icon>
-      <h3 id='count' item-right>7</h3>
-      <button id='btn' ion-button item-end [color]="ionicNamedColor" (click)='buttonClick();' >Pop?</button>
     </ion-item>
+  </div>
+
+
+  </ion-card-content>
+
+</ion-card>
+
 
 
     <ion-item padding *ngFor="let d of data1" ><ion-icon color="primary" item-left [name]="d.icon" (click)="toggleDetails(d)"></ion-icon>
