@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-selector: 'page-hello-ionic',
-templateUrl: 'hello-ionic.html'
+selector: 'page-tomorrow',
+templateUrl: 'tomorrow.html'
 })
 
-export class HelloIonicPage {
+export class TomorrowPage {
 
 data: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 data1: Array<{ details: string, icon: string, showDetails: boolean}> = [];

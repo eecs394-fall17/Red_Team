@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>What's Poppin?</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<ion-card>
+			<ion-card-content>
+				<!-- Add card content here! -->
+				<div class = "row">
+					<div class="col">
+						<h1>11:00am</h1>
+					</div>
+					<h1>Cookies for Clothes</h1>
+				</div>
+				<div class="row">
+					<div text-wrap class = "item item-divider">
+						<ion-item padding *ngFor="let d of data" >
+							<ion-icon color="primary" item-left [name]="d.icon" (click)="toggleDetails(d)"></ion-icon>
+							{{d.title}}
+							<div *ngIf="d.showDetails">{{d.details}}</div>
+						</ion-item>
+					</div>
+					<div class="item">
+						<ion-icon padding-left item-right ios="ios-contacts" md="md-contacts">
+							<h3 id='count' padding-left padding-right>3</h3>
+						</ion-icon>
+						<button id='btn' ion-button item-right [color]="ionicNamedColor" (click)='buttonClick();' >Pop?
+						</button>
+					</div>
+				</div>
+			</ion-card-content>
+		</ion-card>
+
+		<ion-card>
+			<ion-card-content>
+				<!-- Add card content here! -->
+				<div class = "row">
+					<div class="col">
+						<h1>4:30pm</h1>
+					</div>
+					<h1>Field Hockey Game</h1>
+				</div>
+				<div class="row">
+					<div text-wrap class = "item item-divider">
+						<ion-item padding *ngFor="let d of data1" >
+							<ion-icon color="primary" item-left [name]="d.icon" (click)="toggleDetails(d)"></ion-icon>
+							{{d.title}}
+							<div *ngIf="d.showDetails">{{d.details}}</div>
+						</ion-item>
+					</div>
+					<div class="item">
+						<ion-icon padding-left item-right ios="ios-contacts" md="md-contacts">
+							<h3 id='count1' padding-left padding-right>35</h3>
+						</ion-icon>
+						<button id='btn1' ion-button item-right [color]="ionicNamedColor1" (click)='buttonClick1();' >Pop?
+						</button>
+					</div>
+				</div>
+			</ion-card-content>
+		</ion-card>
+
+	</ion-list>
+</ion-content>

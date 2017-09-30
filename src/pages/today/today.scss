@@ -1,0 +1,13 @@
+page-today {
+  $font-stack:    Helvetica, sans-serif;
+  $primary-color: #333;
+
+  ion-card-header{
+
+    font: 100% $font-stack;
+    color: $primary-color;
+    font-size: 100px;
+
+  }
+
+}
