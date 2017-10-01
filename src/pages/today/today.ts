@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
+import { HelpModalPage } from '../help-modal/help-modal';
 
 @Component({
 selector: 'page-today',
@@ -18,7 +19,7 @@ data6: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 
 
 
-constructor(public navCtrl: NavController) {
+constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
 this.data.push({
 details: 'The first round of Club Tennis Tryouts will be held at SPAC and last 3 hours.',
 icon: 'ios-add-circle-outline',
@@ -60,6 +61,9 @@ details: 'Do you like improv? Do you like to laugh? Come checkout NSTV and meet 
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
+
+let myModal = this.modalCtrl.create(HelpModalPage);
+myModal.present();
 }
 
  toggleDetails(data) {
@@ -71,6 +75,12 @@ showDetails: false
        data.icon = 'ios-remove-circle-outline';
    }
  }
+ 
+ openModal() {
+    //let myModal = this.modalCtrl.create(HelpModalPage);
+	//myModal.present();
+  }
+
 
 public ionicNamedColor: string = 'light';
 public ionicNamedColor1: string = 'light';

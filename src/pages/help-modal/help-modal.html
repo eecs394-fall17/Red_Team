@@ -1,0 +1,46 @@
+<!--
+  Generated template for the HelpModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Welcome to What's Poppin!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="page-help-modal">
+	<h5 id="tutorial1">We hope you're ready to have some fun! But first, let's take you through some basics:</h5>
+	<p id="tutorial1">If you see an event you'd like to attend, simply tap on Pop? This makes the button turn green, 
+	mark you as Poppin', and raise the number of people attending!</p>
+	<div class="row">
+		<div class="col">
+			<div class="item">
+				<ion-icon padding-left item-right ios="ios-contacts" md="md-contacts">
+					<h3 padding-left padding-right>7</h3>
+				</ion-icon>
+				<button ion-button item-right color="light">Pop?</button>
+			</div>
+		</div>
+		<div class="col">
+			<div class="item">
+				<ion-icon name="arrow-round-forward"></ion-icon>
+			</div>
+		</div>
+		<div class="col">
+			<div class="item">
+				<ion-icon padding-left item-right ios="ios-contacts" md="md-contacts">
+					<h3 padding-left padding-right>8</h3>
+				</ion-icon>
+				<button ion-button item-right color="secondary">Poppin'</button>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<button ion-button (click)="dismiss()">Let's pop!</button>
+	</div>
+</ion-content>
