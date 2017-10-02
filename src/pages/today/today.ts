@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController } from 'ionic-angular';
-import { HelpModalPage } from '../help-modal/help-modal';
+import { NavController } from 'ionic-angular';
 
 @Component({
 selector: 'page-today',
 templateUrl: 'today.html'
 })
 
+
+
 export class TodayPage {
+
+
+
 
 data: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 data1: Array<{ details: string, icon: string, showDetails: boolean}> = [];
@@ -18,8 +22,7 @@ data5: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 data6: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 
 
-
-constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+constructor(public navCtrl: NavController) {
 this.data.push({
 details: 'The first round of Club Tennis Tryouts will be held at SPAC and last 3 hours.',
 icon: 'ios-add-circle-outline',
@@ -61,9 +64,6 @@ details: 'Do you like improv? Do you like to laugh? Come checkout NSTV and meet 
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
-
-let myModal = this.modalCtrl.create(HelpModalPage);
-myModal.present();
 }
 
  toggleDetails(data) {
@@ -75,12 +75,6 @@ myModal.present();
        data.icon = 'ios-remove-circle-outline';
    }
  }
- 
- openModal() {
-    //let myModal = this.modalCtrl.create(HelpModalPage);
-	//myModal.present();
-  }
-
 
 public ionicNamedColor: string = 'light';
 public ionicNamedColor1: string = 'light';
@@ -111,9 +105,7 @@ document.getElementById('count').textContent = (count_number + 1).toString();
 }else{
 document.getElementById('count').textContent = (count_number - 1).toString();
 }
-
 }
-
 
 buttonClick1(){
 var count_string = document.getElementById('count1').textContent;
@@ -252,5 +244,7 @@ document.getElementById('count6').textContent = (count_number + 1).toString();
 document.getElementById('count6').textContent = (count_number - 1).toString();
 }
 }
+
+
 
 }
