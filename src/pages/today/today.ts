@@ -10,9 +10,6 @@ templateUrl: 'today.html'
 
 export class TodayPage {
 
-
-
-
 data: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 data1: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 data2: Array<{ details: string, icon: string, showDetails: boolean}> = [];
