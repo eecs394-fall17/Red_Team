@@ -38,7 +38,7 @@
                     <h2 id = "timeEvent0">11:00am</h2>
                   </td>
                   <td width="33%" align="center" style="font-size: 20px;">
-                    <ion-icon padding-left item-right ios="ios-contacts" md="md-contacts">
+                    <ion-icon padding-left item-right name= "people">
                       <h3 id='count' class="no-break" style="padding-left:5px;">3</h3>
                     </ion-icon>
                   </td>
@@ -52,7 +52,7 @@
               </table>
               <div text-wrap class = "item item-divider" style="width:100%;">
                 <ion-item  *ngFor="let d of data" >
-                  <ion-icon ios="ios-arrow-down" md="md-arrow-down" color="primary" item-left [name]="d.icon" (click)="toggleDetails(d)"></ion-icon>
+                  <ion-icon name = "arrow-down" color="primary" item-left (click)="toggleDetails(d)"></ion-icon>
                   {{d.title}}
                   <div *ngIf="d.showDetails">{{d.details}}</div>
                 </ion-item>
@@ -75,7 +75,7 @@
                     <h2 id = "timeEvent0">04:30pm</h2>
                   </td>
                   <td width="33%" align="center" style="font-size: 20px;">
-                    <ion-icon padding-left item-right ios="ios-contacts" md="md-contacts">
+                    <ion-icon padding-left item-right name= "people">
                       <h3 id='count1' class="no-break" style="padding-left:5px;">46</h3>
                     </ion-icon>
                   </td>
@@ -89,7 +89,7 @@
               </table>
               <div text-wrap class = "item item-divider" style="width:100%;">
                 <ion-item  *ngFor="let d of data1" >
-                  <ion-icon ios="ios-arrow-down" md="md-arrow-down" color="primary" item-left [name]="d.icon" (click)="toggleDetails(d)"></ion-icon>
+                  <ion-icon name = "arrow-down" color="primary" item-left  (click)="toggleDetails(d)"></ion-icon>
                   {{d.title}}
                   <div *ngIf="d.showDetails">{{d.details}}</div>
                 </ion-item>
