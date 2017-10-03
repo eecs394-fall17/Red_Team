@@ -18,4 +18,12 @@ page-tomorrow {
     display: inline;
   }
 
+  #count, #count1 {
+  	font: 75% $font-stack;
+    }
+
+    #timeEvent0, #timeEvent1 {
+        font: 135% $font-stack;
+        }
+
 }
