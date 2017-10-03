@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
-import { HelpModalPage } from '../help-modal/help-modal'; 
+import { HelpModalPage } from '../help-modal/help-modal';
 
 @Component({
 selector: 'page-today',
@@ -8,38 +8,7 @@ templateUrl: 'today.html'
 })
 
 
-
 export class TodayPage {
-
-buttonDisabled0 = false;
-buttonDisabled1 = false;
-
-cardDisable0(){
-var timeEvent = document.getElementById('timeEvent0').textContent;
-var currentTime =  (Date.now()).toString();
-
-if (timeEvent < currentTime && this.buttonDisabled0 == false){
-    this.buttonDisabled0 = true;
-    }
-else{
-    this.buttonDisabled0 = false;
-    }
-}
-
-cardDisable1(){
-var timeEvent = document.getElementById('timeEvent1').textContent;
-var currentTime =  (Date.now()).toString();
-
-
-if (timeEvent < currentTime && this.buttonDisabled1 == false){
-    this.buttonDisabled1 = true;
-    }
-else{
-    this.buttonDisabled1 = false;
-    }
-}
-
-
 
 data: Array<{ details: string, icon: string, showDetails: boolean}> = [];
 data1: Array<{ details: string, icon: string, showDetails: boolean}> = [];
@@ -105,7 +74,7 @@ showDetails: false
        data.icon = 'ios-remove-circle-outline';
    }
  }
- 
+
 openModal() {
 	this.modalCtrl.create(HelpModalPage).present();
 }
