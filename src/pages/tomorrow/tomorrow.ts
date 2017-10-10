@@ -9,20 +9,24 @@ templateUrl: 'tomorrow.html'
 
 export class TomorrowPage {
 
-data: Array<{ details: string, icon: string, showDetails: boolean}> = [];
-data1: Array<{ details: string, icon: string, showDetails: boolean}> = [];
+data: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
+data1: Array<{ details: string, loc: string, cost: string, icon: string, showDetails: boolean}> = [];
 
 
 
 constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
 this.data.push({
 details: 'Stop by Foster-Walker Complex (Plex) with clothes, and we\'ll trade you cookies for your donations!',
+loc: 'TEST',
+cost: 'TEST',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
 
 this.data1.push({
 details: 'Today is the big day! Come watch our Wildcats qualify for the championship tournament!',
+loc: 'TEST',
+cost: 'TEST',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
