@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { HelpModalPage } from '../help-modal/help-modal';
 
+
 @Component({
 selector: 'page-today',
 templateUrl: 'today.html'
