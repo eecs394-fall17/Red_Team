@@ -307,7 +307,11 @@
             <ion-item  *ngFor="let d of data6" >
               <ion-icon name = "arrow-down" color="primary" item-left  (click)="toggleDetails(d)"></ion-icon>
               {{d.title}}
-              <div *ngIf="d.showDetails">{{d.details}}</div>
+              <div *ngIf="d.showDetails">
+				<div><strong>LOCATION: </strong>{{d.loc}}</div>
+				<div><strong>DESCRIPTION: </strong>{{d.details}}</div>
+				<div><strong>COST: </strong>{{d.cost}}</div>
+			  </div>
             </ion-item>
           </div>
         </div>
