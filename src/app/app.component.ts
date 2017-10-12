@@ -8,9 +8,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
+
 @Component({
   templateUrl: 'app.html'
 })
+
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
@@ -32,6 +35,7 @@ export class MyApp {
       { title: 'Tomorrow', component: TomorrowPage },
     ];
   }
+  
 
   initializeApp() {
     this.platform.ready().then(() => {

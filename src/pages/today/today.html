@@ -4,29 +4,47 @@
 			<table width="100%">
 				<tr>
 					<td width="33%" align="left">
-						<button ion-button menuToggle>
-							<ion-icon name="menu"></ion-icon>
-						</button>
+
+						<label style="font-size: 16px;" class = "item item-input item-select">
+							<select>
+								<option selected>Today</option>
+								<option>10/13</option>
+								<option>10/14</option>
+								<option>10/15</option>
+								<option>10/16</option>
+							</select>
+						</label>
 					</td>
-					<td width="33%" align="center">
-						<ion-title >What's Poppin?</ion-title>
+					<td width="33%" align="center" >
+						<div style="font-size: 17px;" >What's Poppin?</div>
 					</td>
 					<td width="33%" align="right">
-            <!-- <button ion-button round icon-only (click)="getCurrentTime()">
-							<ion-icon name="html5"></ion-icon>
-						</button> -->
-						<button ion-button small round icon-only (click)="openModal()">
-							<ion-icon name="help"></ion-icon>
-						</button>
-					</td>
-				</tr>
-			</table>
-		</div>
+				</td>
+			</tr>
+		</table>
+	</div>
 	</ion-navbar>
-</ion-header>
+	</ion-header>
 
-<ion-content padding>
-  <ion-list>
+	<ion-content padding>
+		<ion-list>
+
+			<ion-card id="cardhelp">
+				<ion-card-content align="center" >
+					<h1 class="no-break">What's</h1>
+					<button ion-button  color="secondary" >Poppin'
+					</button>
+					<h1 class="no-break" >in your</h1>
+					<button ion-button  color="light" >Pop?
+					</button>
+					<h1  class="no-break">ulation?</h1>
+					<div align="right">
+						<button ion-button (click)="openModal()">
+							Confused?
+						</button>
+					</div>
+				</ion-card-content>
+			</ion-card>
 
     <ion-card id="card0">
       <ion-card-content>
@@ -39,7 +57,7 @@
               <td width="33%" align="left">
                 <h2 id = "timeEvent0">09:00am</h2>
               </td>
-              <td width="33%" align="right" style="font-size: 20px;">
+              <td width="40%" align="right" style="font-size: 20px;">
                 <ion-icon padding-left item-right name= "contacts">
                   <h3 id='count' class="no-break" style="padding-left:5px;">7</h3>
                 </ion-icon>
@@ -67,7 +85,9 @@
       </ion-card-content>
     </ion-card>
 
-
+						<!-- <button ion-button menuToggle>
+						<ion-icon name="menu"></ion-icon>
+					</button> -->
 
     <ion-card id="card1">
       <ion-card-content>
@@ -80,7 +100,7 @@
               <td width="33%" align="left">
                 <h2 id = "timeEvent1">09:30pm</h2>
               </td>
-              <td width="33%" align="right" style="font-size: 20px;">
+              <td width="40%" align="right" style="font-size: 20px;">
                 <ion-icon padding-left item-right name= "contacts">
                   <h3 id='count1' class="no-break" style="padding-left:5px;">6</h3>
                 </ion-icon>
@@ -108,8 +128,6 @@
       </ion-card-content>
     </ion-card>
 
-
-
     <ion-card id="card2">
       <ion-card-content>
         <div class = "row">
@@ -121,7 +139,7 @@
               <td width="33%" align="left">
                 <h2 id = "timeEvent2">11:00am</h2>
               </td>
-              <td width="33%" align="right" style="font-size: 20px;">
+              <td width="40%" align="right" style="font-size: 20px;">
                 <ion-icon padding-left item-right name= "contacts">
                   <h3 id='count2' class="no-break" style="padding-left:5px;">36</h3>
                 </ion-icon>
@@ -149,9 +167,6 @@
       </ion-card-content>
     </ion-card>
 
-
-
-
     <ion-card id="card3">
       <ion-card-content>
         <div class = "row">
@@ -163,7 +178,7 @@
               <td width="33%" align="left">
                 <h2 id = "timeEvent3">12:00pm</h2>
               </td>
-              <td width="33%" align="right" style="font-size: 20px;">
+              <td width="40%" align="right" style="font-size: 20px;">
                 <ion-icon padding-left item-right name= "contacts">
                   <h3 id='count3' class="no-break" style="padding-left:5px;">82</h3>
                 </ion-icon>
@@ -192,8 +207,6 @@
     </ion-card>
 
 
-
-
     <ion-card id="card4">
       <ion-card-content>
         <div class = "row">
@@ -205,7 +218,7 @@
               <td width="33%" align="left">
                 <h2 id = "timeEvent4">03:00pm</h2>
               </td>
-              <td width="33%" align="right" style="font-size: 20px;">
+              <td width="40%" align="right" style="font-size: 20px;">
                 <ion-icon padding-left item-right name= "contacts">
                   <h3 id='count4' class="no-break" style="padding-left:5px;">12</h3>
                 </ion-icon>
@@ -232,10 +245,6 @@
         </div>
       </ion-card-content>
     </ion-card>
-
-
-
-
     <ion-card id="card5">
       <ion-card-content>
         <div class = "row">
@@ -247,7 +256,7 @@
               <td width="33%" align="left">
                 <h2 id = "timeEvent5">07:00pm</h2>
               </td>
-              <td width="33%" align="right" style="font-size: 20px;">
+              <td width="40%" align="right" style="font-size: 20px;">
                 <ion-icon padding-left item-right name= "contacts">
                   <h3 id='count5' class="no-break" style="padding-left:5px;">9</h3>
                 </ion-icon>
@@ -275,43 +284,43 @@
       </ion-card-content>
     </ion-card>
 
-
-
-
-
-    <ion-card id="card6">
-      <ion-card-content>
-        <div class = "row">
-          <h1 id="cardtitle" align="right">Improv Titanic Show</h1>
-        </div>
-        <div class="row">
-          <table width="100%">
-            <tr>
-              <td width="33%" align="left">
-                <h2 id = "timeEvent6">09:00pm</h2>
-              </td>
-              <td width="33%" align="right" style="font-size: 20px;">
-                <ion-icon padding-left item-right name= "contacts">
-                  <h3 id='count6' class="no-break" style="padding-left:5px;">31</h3>
-                </ion-icon>
-              </td>
-              <td width="33%" align="right">
-                <div class="item item-button-right">
-                  <button id='btn6' ion-button item-right [color]="ionicNamedColor6" (click)='buttonClick6();' >Pop?
-                  </button>
-                </div>
-              </td>
-            </tr>
-          </table>
-          <div text-wrap class = "item item-divider" style="width:100%;">
-            <ion-item  *ngFor="let d of data6" >
-              <ion-icon name = "arrow-down" color="primary" item-left  (click)="toggleDetails(d)"></ion-icon>
-              {{d.title}}
-              <div *ngIf="d.showDetails">{{d.details}}</div>
-            </ion-item>
-          </div>
-        </div>
-      </ion-card-content>
-    </ion-card>
-  </ion-list>
+		<ion-card id="card6">
+			<ion-card-content>
+				<div class = "row">
+					<h1 id="cardtitle" align="right">Improv Titanic Show</h1>
+				</div>
+				<div class="row">
+					<table width="100%">
+						<tr>
+							<td width="33%" align="left">
+								<h2 id = "timeEvent6">09:00pm</h2>
+							</td>
+							<td width="40%" align="right" style="font-size: 20px;">
+								<ion-icon padding-left item-right name= "contacts">
+									<h3 id='count6' class="no-break" style="padding-left:5px;">31</h3>
+								</ion-icon>
+							</td>
+							<td width="33%" align="right">
+								<div class="item item-button-right">
+									<button id='btn6' ion-button item-right [color]="ionicNamedColor6" (click)='buttonClick6();' >Pop?
+									</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div text-wrap class = "item item-divider" style="width:100%;">
+						<ion-item  *ngFor="let d of data6" >
+							<ion-icon name = "arrow-down" color="primary" item-left  (click)="toggleDetails(d)"></ion-icon>
+							{{d.title}}
+							<div *ngIf="d.showDetails">
+								<div><strong>LOCATION: </strong>{{d.loc}}</div>
+							  <div><strong>DESCRIPTION: </strong>{{d.details}}</div>
+							  <div><strong>COST: </strong>{{d.cost}}</div>
+							</div>
+						</ion-item>
+					</div>
+				</div>
+			</ion-card-content>
+		</ion-card>
+	</ion-list>
 </ion-content>

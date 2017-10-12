@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
-import { HelpModalPage } from '../help-modal/help-modal'; 
+import { HelpModalPage } from '../help-modal/help-modal';
 
 @Component({
 selector: 'page-tomorrow',
@@ -17,16 +17,17 @@ data1: Array<{ details: string, loc: string, cost: string, icon: string, showDet
 constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
 this.data.push({
 details: 'Stop by Foster-Walker Complex (Plex) with clothes, and we\'ll trade you cookies for your donations!',
-loc: 'TEST',
-cost: 'TEST',
+loc: 'Plex Front Lobby',
+cost: 'FREE!',
 icon: 'ios-add-circle-outline',
 showDetails: false
+
 });
 
 this.data1.push({
 details: 'Today is the big day! Come watch our Wildcats qualify for the championship tournament!',
-loc: 'TEST',
-cost: 'TEST',
+loc: 'Lakeside Field',
+cost: '$10',
 icon: 'ios-add-circle-outline',
 showDetails: false
 });
@@ -41,7 +42,7 @@ showDetails: false
        data.icon = 'ios-remove-circle-outline';
    }
  }
- 
+
 openModal() {
 	this.modalCtrl.create(HelpModalPage).present();
 }
